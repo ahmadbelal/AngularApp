@@ -5,105 +5,90 @@ import HC_exporting from 'highcharts/modules/exporting';
 @Component({
   selector: 'app-widget-card',
   templateUrl: './card.component.html',
-  styleUrls: ['./card.component.css']
+  styleUrls: ['./card.component.css'],
 })
 export class CardComponent implements OnInit {
   @Input() label: string;
   @Input() total: string;
   @Input() percentage: string;
-  Highcharts= Highcharts;
+  Highcharts = Highcharts;
   chartOptions = {};
-  @Input() data = [];
-  constructor() { }
+  @Input() data: Array<number> = [];
+  constructor() {}
 
   ngOnInit(): void {
+    this.chartOptions = {
+      chart: {
+        type: 'area',
+        backgroundcolor: null,
+        borderwidth: 0,
+        margin: [2, 2, 2, 2],
+        height: 60,
+      },
+      title: {
+        text: null,
+      },
+      subtitle: {
+        text: null,
+      },
 
-      this.chartOptions = {
-        chart: {
-            type: 'area',
-            backgroundcolor:null,
-            borderwidth:0,
-            margin:[2,2,2,2],
-            height:60
+      tooltip: {
+        split: true,
+        outside: true,
+      },
+      legend: {
+        enabled: false,
+      },
+      credits: {
+        enabled: false,
+      },
+      exporting: {
+        enabled: false,
+      },
+
+      xAxis: {
+        lable: {
+          enabled: false,
         },
         title: {
-            text: null
+          text: null,
         },
-        subtitle: {
-            text: null
+        startOnTick: false,
+        endonTick: false,
+        tickOptions: [],
+      },
+      yAxis: {
+        lable: {
+          enabled: false,
         },
-
-
-        tooltip: {
-            split: true,
-            outside:true,
+        title: {
+          text: null,
         },
-        legend:{
-          enabled:false,
+        startOnTick: false,
+        endonTick: false,
+        tickOptions: [],
+      },
 
+      plotOptions: {
+        area: {
+          stacking: 'normal',
+          lineColor: '#666666',
+          lineWidth: 1,
+          marker: {
+            lineWidth: 1,
+            lineColor: '#666666',
+          },
         },
-        credits:{
-          enabled:false,
+      },
+      series: [
+        {
+          data: this.data,
         },
-        exporting:{
-          enabled:false,
-        },
-
-
-        xAxis:{
-          lable:{
-
-
-          enabled:false,
-        },
-        title:{
-          text:null
-        },
-        startOnTick:false,
-        endonTick:false,
-        tickOptions:[]
-        },
-        yAxis:{
-          lable:{
-
-
-          enabled:false,
-        },
-        title:{
-          text:null
-        },
-        startOnTick:false,
-        endonTick:false,
-        tickOptions:[]
-        },
-
-        plotOptions: {
-            area: {
-                stacking: 'normal',
-                lineColor: '#666666',
-                lineWidth: 1,
-                marker: {
-                    lineWidth: 1,
-                    lineColor: '#666666'
-                }
-            }
-        },
-        series: [{
-          data:this.data
-
-        }]
-       };
-       HC_exporting(Highcharts);
-       setTimeout(() => {
-         window.dispatchEvent(
-           new Event('resize')
-         );
-
-
-      }, 300);
-    }
-
-
+      ],
+    };
+    HC_exporting(Highcharts);
+    setTimeout(() => {
+      window.dispatchEvent(new Event('resize'));
+    }, 300);
   }
-
-
+}
