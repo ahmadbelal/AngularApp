@@ -122,7 +122,7 @@
   resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-9.1.7.tgz#09bf7c84c234d8b6ecaa101024a3b3e69ab198cd"
   integrity sha512-1wW8ndGMLDuE2LpTN2RNRz1Dt7JgVBeVmOPMgzoA7g1uuvm+jESTrGG7W3BzLzG0BE2TeXt0fY90o4iU+S2Rmg==
 
-"@angular/cdk@^9.2.4":
+"@angular/cdk@^9.1.3":
   version "9.2.4"
   resolved "https://registry.yarnpkg.com/@angular/cdk/-/cdk-9.2.4.tgz#8413958bd275e4c34be3b96f56444671dd30ba93"
   integrity sha512-iw2+qHMXHYVC6K/fttHeNHIieSKiTEodVutZoOEcBu9rmRTGbLB26V/CRsfIRmA1RBk+uFYWc6UQZnMC3RdnJQ==
@@ -188,12 +188,17 @@
   resolved "https://registry.yarnpkg.com/@angular/core/-/core-9.1.7.tgz#0465c26d9101389602e3ff9e502f83f3655e9fe1"
   integrity sha512-uJSZ+rdGL47gc3A+Fal1XwJYB4WWpYJrNifvoQ2nOs+X5Qu+j0HN6GXPJb4kixoNzjYCGxmLoirdT3xhNZFcfQ==
 
+"@angular/flex-layout@^9.0.0-beta.31":
+  version "9.0.0-beta.31"
+  resolved "https://registry.yarnpkg.com/@angular/flex-layout/-/flex-layout-9.0.0-beta.31.tgz#9c0672acafa87de4759f7d0a9aab004e7da105d2"
+  integrity sha512-g94u2mecDl87ORvFRuOBshV/S/ETE4bybClU2e1xXKWNG+rhRHchChneHSonc29ZLyROTjHhmAtKOYojL92uLA==
+
 "@angular/forms@~9.1.7":
   version "9.1.7"
   resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-9.1.7.tgz#cdefbc7c7093fd37b417975f18b875a798cbd2d9"
   integrity sha512-/bRs5hSFDUjOrq2vw11HoS25oEu7KYVxPbQiEjeBHJo82yDmSO+1cVukh6ulDi7iv1sJwSzikDtE9+xDx1ocfQ==
 
-"@angular/material@^9.2.4":
+"@angular/material@^9.1.3":
   version "9.2.4"
   resolved "https://registry.yarnpkg.com/@angular/material/-/material-9.2.4.tgz#2666ef606fbb88d60f8e2f18c5e4f94a3dd572d8"
   integrity sha512-LkoTXE6B0slvMhvfZDdPWaz4yaYLkaAp5VSPunI9pxGsPxzqEV9e210wC1/sjG/76Nk8Ep7/2z9XKac8Q9bMwA==
@@ -1080,6 +1085,11 @@
   version "12.12.39"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.39.tgz#532d25c1e639d89dd6f3aa1d7b3962e3e7fa943d"
   integrity sha512-pADGfwnDkr6zagDwEiCVE4yQrv7XDkoeVa4OfA9Ju/zRTk6YNDLGtQbkdL4/56mCQQCs4AhNrBIag6jrp7ZuOg==
+
+"@types/office-js@^1.0.100":
+  version "1.0.177"
+  resolved "https://registry.yarnpkg.com/@types/office-js/-/office-js-1.0.177.tgz#f1fd2c5ea274fb8916077ea259f31c1d84fc6506"
+  integrity sha512-7+N0PJv91989f8JMYdLG2rf9xTtn6ubWM5fXTLeHYw0ueHatpAuQ4z8jsoYBd9REnt6G2D5b+t3LbA68AxeZvg==
 
 "@types/q@^0.0.32":
   version "0.0.32"
@@ -3930,6 +3940,18 @@ hex-color-regex@^1.1.0:
   resolved "https://registry.yarnpkg.com/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==
 
+highcharts-angular@^2.4.0:
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/highcharts-angular/-/highcharts-angular-2.10.0.tgz#bf7af152ca1b89d9e773531a132ced617f9844d1"
+  integrity sha512-ICeLKeN6bgFqgBKmHE6p/c15IvWIeUqhDzB0PG8oAoZLpKKRjxGddFu6g2iVy9v952eDvywFcEXqRPO9PPRvag==
+  dependencies:
+    tslib "^2.0.0"
+
+highcharts@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/highcharts/-/highcharts-9.0.0.tgz#2e5d382481f71c50ac7f086e7bdead394fab71d4"
+  integrity sha512-MJCtidFytGSQvsV3OEM+vFTLpjUcp7jmFpLn8h3oL4WKp0gxUOQg6Nw00sqMWGdiadst0gOZO4804zynTcYjZQ==
+
 hmac-drbg@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/hmac-drbg/-/hmac-drbg-1.0.1.tgz#d2745701025a6c775a6c545793ed502fc0c649a1"
@@ -5159,6 +5181,11 @@ map-visit@^1.0.0:
   integrity sha1-7Nyo8TFE5mDxtb1B8S80edmN+48=
   dependencies:
     object-visit "^1.0.0"
+
+material-design-icons@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/material-design-icons/-/material-design-icons-3.0.1.tgz#9a71c48747218ebca51e51a66da682038cdcb7bf"
+  integrity sha1-mnHEh0chjrylHlGmbaaCA4zct78=
 
 md5.js@^1.3.4:
   version "1.3.5"
@@ -8110,6 +8137,11 @@ tslib@^1.10.0, tslib@^1.8.1, tslib@^1.9.0:
   version "1.13.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.13.0.tgz#c881e13cc7015894ed914862d276436fa9a47043"
   integrity sha512-i/6DQjL8Xf3be4K/E6Wgpekn5Qasl1usyw++dAA35Ue5orEn65VIxOA+YvNNl9HV3qv70T7CNwjODHZrLwvd1Q==
+
+tslib@^2.0.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.2.0.tgz#fb2c475977e35e241311ede2693cee1ec6698f5c"
+  integrity sha512-gS9GVHRU+RGn5KQM2rllAlR3dU6m7AcpJKdtH8gFvQiC4Otgk98XnmMU+nZenHt/+VhnBPWwgrJsyrdcw6i23w==
 
 tslint@~6.1.0:
   version "6.1.2"
